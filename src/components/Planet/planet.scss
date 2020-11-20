@@ -1,0 +1,52 @@
+.planet-container {
+  width: 100%;
+}
+
+.planet-description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.characters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-gap: 10px;
+  width: 80%;
+  & .character {
+    border: 1px solid white;
+    & .info {
+      padding-bottom: 20px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width:480px)  {
+  .characters {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width:481px) and (max-width:768px)  {
+  .characters {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
+.character-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
